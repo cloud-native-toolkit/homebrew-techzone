@@ -8,7 +8,7 @@ To install the latest version of IBM Techzone into `/usr/local/bin`, run the fol
 
 ```shell
 brew tap cloud-native-toolkit/homebrew-techzone
-brew install atk
+brew install cloud-native-toolkit/techzone/atk 
 ```
 
 
