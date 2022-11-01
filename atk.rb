@@ -8,6 +8,7 @@ class Atk < Formula
     # depends_on "cmake" => :build
     def install
         bin.install 'atk'
+        bin.install 'atkcli'
     end
   
   end
