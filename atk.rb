@@ -1,7 +1,4 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class atk < Formula
+class Atkcli < Formula
     desc "The atk command line interface is a scriptable command line interface that provides CLI access to IBM TechZone."
     homepage ""
     url "https://github.com/cloud-native-toolkit/atkcli-release/releases/download/v0.1.11/atkcli-darwin-amd64.tar.gz"
