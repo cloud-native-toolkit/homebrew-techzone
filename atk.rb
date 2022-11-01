@@ -1,4 +1,4 @@
-class Atkcli < Formula
+class Atk < Formula
     desc "The atk command line interface is a scriptable command line interface that provides CLI access to IBM TechZone."
     homepage ""
     url "https://github.com/cloud-native-toolkit/atkcli-release/releases/download/v0.1.11/atkcli-darwin-amd64.tar.gz"
