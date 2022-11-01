@@ -8,12 +8,9 @@ To install the latest version of IBM Techzone into `/usr/local/bin`, run the fol
 
 ```shell
 brew tap cloud-native-toolkit/homebrew-techzone
-brew install iascable
+brew install atk
 ```
 
 
 ### Change Log
-
-- **11/2021** - Updated to use Client-to-site VPN service (beta) instead of a VSI running a VPN server
-- **11/2021** - Updated to support the Edge VPC infrastructure in addition to Management and Workload VPCs.
 
