@@ -10,10 +10,9 @@ class Itz < Formula
   
     def install
         #ENV["GOPATH"] = buildpath
-        #LDFLAGS="-X main.Version=${ITZ_VER}"
         bin.install 'itz'
         #bin.install 'itzcli'
-        system "go", "build", "-o", "#{bin}/itzcli"
+        system "go", "build", "-ldflags", "-X main.Version=#{version.to_s}", "-o", "#{bin}/itzcli"
     end
   
     test do
