@@ -1,15 +1,22 @@
 class Itz < Formula
     desc "The itz command line interface is a scriptable command line interface that provides CLI access to IBM TechZone."
-    homepage ""
+    homepage "https://github.com/cloud-native-toolkit/itzcli"
     version "1.22"
-    url "https://github.com/cloud-native-toolkit/itzcli-release/releases/download/v0.1.22/itzcli-darwin-amd64.tar.gz"
-    sha256 "35a74784ad33806b68342466ca396bbfeb727d0a1d5b9f640f43d6342b8be25e"
-    license ""
+    url "https://github.com/cloud-native-toolkit/itzcli/archive/refs/tags/1.22.tar.gz"
+    sha256 "c42a6128a1325bf01df01a9e2aeebf2248b4d13fe81ef6f8b033d31686b3bb45"
+    license "Apache"
+
+    depends_on "go" => :build
   
-    # depends_on "cmake" => :build
     def install
+        #ENV["GOPATH"] = buildpath
+        #LDFLAGS="-X main.Version=${ITZ_VER}"
         bin.install 'itz'
-        bin.install 'itzcli'
+        #bin.install 'itzcli'
+        system "go", "build", "-o", "#{bin}/itzcli"
     end
   
-  end
+    test do
+      assert_match version.to_s, shell_output("#{bin}itz version")
+    end
+end
