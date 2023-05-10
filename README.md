@@ -1,16 +1,25 @@
 # IBM Techzone (Homebrew)
 
-[Homebrew](https://brew.sh/) installation for [IBM Techzone](https://github.com/cloud-native-toolkit/atkcli-release)
+[Homebrew](https://brew.sh/) installation for [IBM Technology Zone](https://techzone.ibm.com/) 
+[Command Line Interface](https://github.com/cloud-native-toolkit/itzcli)(CLI).
 
-#### Installation
+## Installation
 
-To install the latest version of IBM Techzone into `/usr/local/bin`, run the following:
+To install the latest version of the IBM Technology Zone CLI into
+`/usr/local/bin`, run the following commands:
 
-```shell
-brew tap cloud-native-toolkit/homebrew-techzone
-brew install cloud-native-toolkit/techzone/atk 
+```bash
+$ brew tap cloud-native-toolkit/homebrew-techzone
+$ brew install itz
 ```
 
+## Getting started
 
-### Change Log
+To learn more about using the `itz` command to work with IBM
+Technology Zone, see the project [README](https://github.com/cloud-native-toolkit/itzcli/blob/main/README.md) 
+and the [the command documentation](https://github.com/cloud-native-toolkit/itzcli/blob/main/docs/itz.md).
 
+## Change Log
+
+See the [CHANGLOG.md](https://github.com/cloud-native-toolkit/itzcli/releases/tag/v0.1.24) 
+file in the [GitHub repository](https://github.com/cloud-native-toolkit/itzcli).
