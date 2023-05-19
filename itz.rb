@@ -10,7 +10,7 @@ class Itz < Formula
   
     def install
         bin.install 'itz'
-        system "make", "install"
+        system "make", "install", "ITZ_VER=#{version}"
         bin.install 'itzcli'
         man1.install Dir["contrib/manpages/*.1"]
         bash_completion.install "contrib/bash/itzcli"
