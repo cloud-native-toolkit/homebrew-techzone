@@ -3,7 +3,7 @@ class Itz < Formula
     homepage "https://github.com/cloud-native-toolkit/itzcli"
     version "v0.1.26"
     url "https://github.com/cloud-native-toolkit/itzcli/archive/refs/tags/v0.1.26.tar.gz"
-    sha256 "63c959f50e9773bff98b8667531e3d14f3d243d37111b7fb030bd246b1430b9b"
+    sha256 "42de1f4e8e253d794ddbde8d50d409127afecfc3618f32e391d7697f17523a0d"
     license "Apache"
 
     depends_on "go" => :build
